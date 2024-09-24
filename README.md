@@ -8,7 +8,7 @@
 
 ## Ejemplo de Uso
 
-A continuación, un ejemplo de cómo hacer una solicitud `GET` a la API para obtener información de un vehículo por su patente:
+A continuación, un ejemplo de cómo hacer una solicitud `GET` a la API para obtener la tasación de un vehículo por su patente:
 
 <pre>
 <code>
@@ -21,3 +21,35 @@ curl --request GET \
 ## Descripción
 
 Este servicio permite obtener datos detallados de un vehículo utilizando su número de patente. Es útil para integraciones en aplicaciones que requieran acceder a información vehicular, como registros automotrices, consultas de historial, o verificación de vehículos.
+
+
+**tasación** Consulta la tasación de un vehículo sólo con su patente.
+
+## Enlace de la API
+
+- [Tasación](https://getapi.cl/tasacion/)
+
+## Ejemplo de Uso
+
+A continuación, un ejemplo de cómo hacer una solicitud `GET` a la API para obtener la tasación de un vehículo por su patente:
+
+<pre>
+<code>
+curl --request GET \
+  --url https://chile.getapi.cl/v1/vehicles/appraisal/${patente} \
+  --header 'accept: application/json'
+</code>
+</pre>
+
+## Descripción
+Esta API cuenta con ratelimit para la version gratis de 5 consultas por dia.
+
+Parametros que podras obtener:
+**precio usado
+**precio retoma
+**información fiscal
+**color
+**tipo de bencina
+**marca
+**modelo
+**otros
