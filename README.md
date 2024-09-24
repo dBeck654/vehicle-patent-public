@@ -22,6 +22,7 @@ curl --request GET \
 
 Este servicio permite obtener datos detallados de un vehículo utilizando su número de patente. Es útil para integraciones en aplicaciones que requieran acceder a información vehicular, como registros automotrices, consultas de historial, o verificación de vehículos.
 
+# Tasación
 
 **tasación** Consulta la tasación de un vehículo sólo con su patente.
 
@@ -45,11 +46,11 @@ curl --request GET \
 Esta API cuenta con ratelimit para la version gratis de 5 consultas por dia.
 
 Parametros que podras obtener:
-**precio usado
-**precio retoma
-**información fiscal
-**color
-**tipo de bencina
-**marca
-**modelo
-**otros
+* precio usado
+* precio retoma
+* información fiscal
+* color
+* tipo de bencina
+* marca
+* modelo
+* otros
